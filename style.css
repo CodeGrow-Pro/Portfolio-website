@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: rgb(168, 165, 165);
+    width: 275px;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    height: 100vh;
+    transition: transform  0.3s ease-in;
+}
+
+.main {
+    /* background-color: yellowgreen; */
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    font-family: 'Playfair Display', serif;
+}
+
+.sidebar nav {
+    padding: 32px;
+    text-align: center;
+}
+
+.sidebar nav li {
+    list-style-type: none;
+    padding: 15px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.info {
+    /* background-color: blueviolet; */
+    height: 65vh;
+    width: 80vw;
+    margin: 103px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devPic img {
+    height: 65vh;
+    margin-right: 20px;
+}
+
+/* .devPic img:hover{
+    box-shadow: 0px 0px 5px;
+    border-radius: 20px;
+} */
+.devInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.hello {
+    font-size: 85px;
+}
+
+.name {
+    font-size: 50px;
+    font-weight: bold
+}
+
+.about {
+    font-size: 30px;
+}
+
+.buttons button,
+.btn {
+    margin-top: 30px;
+    padding: 20px;
+    border: 0px;
+    border-radius: 15px;
+    margin-right: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.moreAbout {
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 30px;
+    margin-right: 100px;
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: grey;
+    border: 2px solid rgb(9, 9, 9);
+}
+
+.btn:hover {
+    background-color: white;
+    color: grey;
+    border: 2px solid rgb(9, 9, 9);
+}
+
+.contactform {
+    padding: 40px;
+}
+
+.contactform h1 {
+    text-align: center;
+    padding: 10px;
+}
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    align-items: left;
+}
+
+#emailHelp {
+    font-size: 12px;
+    color: rgb(58, 56, 56);
+    margin: 0 5px;
+}
+
+.form-check div {
+    flex-direction: row;
+}
+
+.form-check input {
+    width: 20px;
+}
+
+.blogItem {
+    margin: 30px;
+    text-align: left;
+}
+
+.blogContainer {
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.blogContainer h1 {
+    text-align: center;
+}
+
+.blogItem p {
+    margin: 10px;
+}
+
+.blogItem .btn {
+    height: 50px;
+}
+.hamburger{
+    position:absolute;
+    top:10px;
+    left:10px;
+    cursor: pointer;
+}
+.hamburger img{
+    width: 23px;
+}
+.sidebarGo {
+    position: absolute;
+    transform: translate(-413px, 0px);
+}
+@media (max-width:800px) {
+    .sidebar {
+        position: absolute;
+        /* transform: translate(-413px, 0px); */
+    }
+    .devPic {
+    display: none;
+    }
+    .moreAbout{
+        margin-top:10px ;
+        font-size: 10px;
+        margin-right: 40px;
+    }
+    .hello {
+        font-size: 40px;
+    }
+    .name{
+        font-size: 22px;
+    }
+    .about{
+        padding: 0;
+        font-size: 14px;
+    }
+    .contactform {
+      padding: 25px;
+    }
+    .form{
+        width: 100%;
+    }
+    .form 
+    .contactform h1 {
+        text-align: start;
+        padding: 5px;
+        font-size: 15px;
+    }
+    /* .devInfo{
+       padding: 0px;
+       margin-right: 140px;
+       align-items: center;
+       text-align: center;
+    } */
+    .buttons button, .btn{
+        margin-top: 15px;
+        padding: 5px;
+        border: 0px;
+        margin-right: 7px;
+        font-size: 10px;
+    }
+}
+.about {
+    padding: 0 20px;;
+}
